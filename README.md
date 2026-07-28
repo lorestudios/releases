@@ -14,10 +14,10 @@ Each product owns its own tags so releases cannot collide:
 - `<product>-stable` is the rolling production installer endpoint.
 - `<product>-v<version>` is an immutable versioned release.
 
-Craftdesk preview installer:
+Craftdesk preview installer for Git Bash and macOS Terminal:
 
-```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "irm https://github.com/lorestudios/releases/releases/download/craftdesk-preview/install-craftdesk.ps1 | iex"
+```bash
+curl -fsSL https://github.com/lorestudios/releases/releases/download/craftdesk-preview/install-craftdesk.sh | sh
 ```
 
 Unsigned preview builds can trigger Windows SmartScreen or macOS Gatekeeper.
